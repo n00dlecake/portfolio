@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/asessts/favicon-32x32.png">
+    <title>George | Portfolio</title>
+
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <nav>
+        <a href="#page-top" class="nav-title"><span>George</span> Blair</a>
+        <div class="nav-buttons">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="landing-area">
+            <div class="hero">
+                <img src="asessts/images/mahere-mock.jpg" alt="hero item from portfolio of work">
+                <div class="hero-text">
+                    <h1>Digital Designer</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl  nec purus dictum faucibus. Pellentesque id odio sed justo volutpat  euismod. Quisque elit nisi, viverra eget justo id, porttitor mattis  orci. Aliquam laoreet placerat semper. Vestibulum feugiat aliquet  viverra. Donec ultrices augue ut justo blandit scelerisque. Ut at neque  purus. Sed pretium sed nisl nec accumsan. Fusce eleifend ipsum non urna  fringilla consectetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <section id="image-carousel" class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="/asessts/images/cafe-re-floral.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/mahere-mock.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/whispering-intro.gif"></li>
+                          <li class="splide__slide"><img src="/asessts/images/sophronia.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/trebuchet.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/eye.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/radioactive-donut.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/flower-bee.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/mimikyu.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/stipple-mountains.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/matariki-biscuits.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/texture.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/yin-yang-fish.jpg"></li>
+                          <li class="splide__slide"><img src="/asessts/images/whispering-storyboard.jpg"></li>
+                      </ul>
+                </div>
+              </section>
+        </section>
+
+        <section id="about">
+            <div class="about">
+                <img src="/asessts/images/headshot.jpg" alt="headshot">
+                <div class="about-text">
+                    <h2>About</h2>
+                    <p> Soon to be graduate of a bachelor of communication design with a diverse background from trade to beauty therapy.
+                        <br>
+                        Someone who is fueled by eclectic creativity and a genuine appreciation for authenticity. Equipped with a knack for effective communication and strong interpersonal connections that enable diverse environments to be navigated with ease. 
+                        <br>
+                        I like to approach challenges with efficiency,  and always aim to transform them into opportunities. My commitment to learning is core to who I am, which aids in quickly mastering new skills and staying ahead of the curve. 
+                        <br>
+                        Embracing biculturalism and sustainability as guiding principles, I strive towards genuine innovation, consistently redefining what my best looks like.
+                        <br>
+                        I'm open to opportunities and flexible about my future direction so don’t hesitate to get in touch if you have a creative goal that we can achieve together. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <!--Contact Form-->
+            <form action="action_page.php">
+                <div class="contact-container">
+                  <h2>Contact</h2>
+              
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input type="text" placeholder="Email address" name="mail" required>
+
+                  <input type="submit" value="Submit">
+                </div>
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="socials">
+
+        </div>
+        <div class="licensing">
+            <p></p>
+        </div>
+
+    </footer>
+    <script src="/javascript.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>    
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-carousel', {
+                type   : 'loop',
+                height   : '32rem',
+                drag   : 'free',
+                focus  : 'center',
+                perPage: 3,
+                autoWidth: true,
+                autoScroll: {
+                    speed: 0.5,
+                    pauseOnHover: boolean = true,
+                },
+            } ).mount(window.splide.Extensions);
+        } );
+    </script>
+  </body>
+</html>

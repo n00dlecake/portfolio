@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*----- Theme -----*/
+:root{
+    /*--- Fonts ---*/
+    --heading-font: "Bricolage Grotesque", sans-serif;;
+    --body-font: "Source Code Pro", monospace;;
+    /*--- Colors ---*/
+    --dark: #191B22;
+    --light: #DFEAEC;
+    --dark-red: #540317;
+    --bright-red: #E60840;
+    --bright-green: #00CF91;
+}
+
+/*----- Basic Style -----*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: var(--body-font);
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+#landing-area, #about, #contact{
+    max-width: 1200px;
+    margin: 11em auto;
+}
+
+h1, h1, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    font-weight: 800;
+}
+
+/*----- Nav Bar -----*/
+nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    font-size: 1.6em;
+}
+
+nav a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.nav-title{
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 2.2em;
+}
+
+.nav-title span{
+    color: var(--bright-green);
+}
+
+.nav-title:hover span{
+    color: var(--bright-red);
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons a{
+    padding: 0.4em 1em;
+    margin: auto 0.4em;
+    color: var(--bright-green);
+    border: 2pt solid var(--bright-red);
+    border-radius: 50px;
+}
+
+.nav-buttons a:hover{
+    border-color: transparent;
+    background-color: var(--bright-green);
+    color: var(--dark);
+}
+
+/*----- Landing Section -----*/
+.hero{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    justify-items: center;
+    align-items: end;
+    width: 80%;
+    margin: auto;
+}
+
+.hero img{
+    border-radius: 50px;
+    max-height: 60vh;
+    margin-right: 0.6em;
+}
+
+.hero-text {
+    margin-left: 1em;
+
+}
+
+.hero-text h1{
+    font-size: 6em;
+    line-height: 90%;
+    margin-bottom: 0;
+}
+
+/*----- Work Section -----*/
+#work{
+    width: 100%;
+    max-width: 100vw;
+    margin: 17em auto;
+}
+
+.splide__slide img {
+    width: auto;
+    height: 100%;
+    border-radius: 50px;
+  }
+
+.splide__slide {
+    margin: 0 1em;
+}
+
+/*----- About Section -----*/
+.about{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    justify-items: center;
+    align-items: end;
+    width: 80%;
+    margin: auto;
+}
+
+.about img{
+    border-radius: 50px;
+    max-height: 40vh;
+    margin-right: 0.6em;
+}
+
+.about-text {
+    margin-left: 1em;
+}
+
+.about-text h2{
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 6em;
+    line-height: 90%;
+    margin-bottom: 0;
+}
+
+/*----- Contact ------*/
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container h2{
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 6em;
+    line-height: 90%;
+    margin-bottom: 0.4em;
+}
+
+input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 1em auto;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 1.2em;
+}
+
+input[type=submit] {
+    width: 25%;
+    color: var(--bright-green);
+    background-color: transparent;
+    border: 2pt solid var(--bright-red);
+    border-radius: 50px;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+input[type=submit]:hover {
+    border-color: transparent;
+    background-color: var(--bright-green);
+    color: var(--dark);
+} 
+
+input[type=text]:focus, input[type=submit]:focus{
+    border: none;
+    outline: 0;
+} 
+
+/*----- Footer -----*/
+footer{
+    margin-top: -5em;
+    width: 80%;
+}
