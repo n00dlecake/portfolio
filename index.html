@@ -25,9 +25,12 @@
     </div>
 
     <main>
+        
+        
+
         <section id="landing-area">
             <div class="hero">
-                <img src="asessts/images/mahere-mock.jpg" alt="hero item from portfolio of work">
+                <div id="container3D"></div>
                 <div class="hero-text">
                     <h1>Digital Designer</h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl  nec purus dictum faucibus. Pellentesque id odio sed justo volutpat  euismod. Quisque elit nisi, viverra eget justo id, porttitor mattis  orci. Aliquam laoreet placerat semper. Vestibulum feugiat aliquet  viverra. Donec ultrices augue ut justo blandit scelerisque. Ut at neque  purus. Sed pretium sed nisl nec accumsan. Fusce eleifend ipsum non urna  fringilla consectetur.</p>
@@ -36,10 +39,10 @@
         </section>
 
         <section id="work">
-            <section id="image-carousel" class="splide" aria-label="Splide Basic HTML Example">
+            <div id="image-carousel" class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                       <ul class="splide__list">
-                          <li class="splide__slide"><img src="/asessts/images/cafe-re-floral.jpg"></li>
+                          <li class="splide__slide"><img data-modal-target="#modal"src="/asessts/images/cafe-re-floral.jpg"></li>
                           <li class="splide__slide"><img src="/asessts/images/mahere-mock.jpg"></li>
                           <li class="splide__slide"><img src="/asessts/images/whispering-intro.gif"></li>
                           <li class="splide__slide"><img src="/asessts/images/sophronia.jpg"></li>
@@ -55,7 +58,20 @@
                           <li class="splide__slide"><img src="/asessts/images/whispering-storyboard.jpg"></li>
                       </ul>
                 </div>
-              </section>
+            </div>
+            <!--Modals-->
+            <div>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Example Modal</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis fugit molestiae officia voluptas delectus cum asperiores sunt, molestias beatae voluptatibus odit amet! Dignissimos, in suscipit optio cumque nesciunt, iure maiores animi unde nobis harum, earum aliquid! In distinctio voluptatibus ab illo quas, ea doloremque autem. Dolorem ratione suscipit, obcaecati, quisquam libero dolores tempore autem illum assumenda numquam accusamus totam odit recusandae atque neque nostrum optio animi eligendi? Repellat, cumque? Vitae rerum quos placeat culpa accusamus aspernatur amet magnam aperiam.
+                    </div>
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section>
 
         <section id="about">
@@ -102,7 +118,8 @@
         </div>
 
     </footer>
-    <script src="/javascript.js"></script>
+    <script src="popup.js"></script>
+    <script type="module" src="three.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>    
     <script>
