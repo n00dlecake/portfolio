@@ -47,13 +47,13 @@ loader.load(
 
 //Instantiate new renderer and set size
 const renderer = new THREE.WebGLRenderer({alpha: true}); //Alpha true allows for transparent background
-renderer.setSize(window.innerWidth / 4, window.innerHeight / 4);
+renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
 
 //Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set z pos of camera
-camera.position.z = objToRender === "phone" ? 2 : 500;
+camera.position.z = objToRender === "phone" ? 6 : 500;
 
 //Add lights to the scene
 const topLight = new THREE.DirectionalLight(0xffffff, 1); //(color, intensity)
