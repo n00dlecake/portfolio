@@ -11,6 +11,7 @@
     --dark-red: #540317;
     --bright-red: #E60840;
     --bright-green: #00CF91;
+    --dark-green: #00825B;
 }
 
 /*----- Basic Style -----*/
@@ -45,7 +46,7 @@ a{
 }
 
 a:hover{
-    color: var(--bright-red);
+    color: var(--dark-green);
 }
 
 /*----- Nav Bar -----*/
@@ -85,7 +86,7 @@ nav a{
 }
 
 .nav-title:hover span{
-    color: var(--bright-red);
+    color: var(--dark-green);
 }
 
 .nav-buttons{
@@ -98,7 +99,7 @@ nav a{
     padding: 0.4em 1em;
     margin: auto 0.4em;
     color: var(--bright-green);
-    border: 2pt solid var(--bright-red);
+    border: 2pt solid var(--dark-green);
     border-radius: 50px;
 }
 
@@ -110,8 +111,7 @@ nav a{
 
 /*----- Landing Section -----*/
 .hero{
-    display: grid;
-    grid-template-columns: 3fr 4fr;
+    display: flex;
     justify-items: center;
     align-items: end;
     width: 80%;
@@ -130,11 +130,15 @@ nav a{
 }
 
 /*--- 3D Model ---*/
+#container3D {
+    width: 100%;
+    height: 60vh;
+    margin-right: 0.6em;
+}
 #conatiner3D canvas {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-right: 0.6em;
 }
 
 /*----- Work Section -----*/
@@ -313,4 +317,14 @@ footer{
     margin: 1em auto 0.4em;
 }
 
+/* @media screen and (max-width:600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+} */
 
